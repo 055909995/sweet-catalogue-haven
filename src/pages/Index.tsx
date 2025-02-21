@@ -1,8 +1,6 @@
 
-import { useState } from "react";
 import { ChevronRight, Cookie, Candy, CakeSlice } from "lucide-react";
 import { translations } from "../utils/translations";
-import LanguageSwitcher from "../components/LanguageSwitcher";
 
 const ProductCard = ({ title, description, icon: Icon }: { title: string; description: string; icon: any }) => (
   <div className="product-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl">
@@ -15,25 +13,10 @@ const ProductCard = ({ title, description, icon: Icon }: { title: string; descri
 );
 
 const Index = () => {
-  const [currentLanguage, setCurrentLanguage] = useState("en");
-  const t = translations[currentLanguage];
+  const t = translations["en"];  // We now get currentLanguage from App.tsx
 
   return (
     <div className="min-h-screen">
-      <LanguageSwitcher 
-        currentLanguage={currentLanguage}
-        onLanguageChange={setCurrentLanguage}
-      />
-      
-      {/* Logo */}
-      <div className="fixed top-4 left-4 z-50">
-        <img 
-          src="/lovable-uploads/7786c223-bca3-453f-b487-f4b0e433368e.png" 
-          alt="CONFI Logo" 
-          className="h-12 w-auto"
-        />
-      </div>
-
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center bg-gradient-to-r from-primary to-secondary overflow-hidden">
         <div className="container mx-auto px-4 text-center animate-fade-down">
