@@ -13,20 +13,22 @@ const ProductCard = ({ title, description, icon: Icon }: { title: string; descri
 );
 
 const Index = () => {
-  const t = translations["en"];  // We now get currentLanguage from App.tsx
+  const t = translations["en"];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center bg-gradient-to-r from-primary to-secondary overflow-hidden">
-        <div className="container mx-auto px-4 text-center animate-fade-down">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+      <section className="relative h-[80vh] flex items-center justify-center bg-gradient-to-br from-primary via-[#8B5CF6] to-[#D6BCFA] overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/f9e92ce0-bb7d-4489-a684-06d5588d8c81.png')] opacity-20 bg-center bg-cover"></div>
+        <div className="glass absolute inset-0 opacity-50"></div>
+        <div className="container mx-auto px-4 text-center relative z-10 animate-fade-down">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             {t.heroTitle}
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-white/90">
             {t.heroDescription}
           </p>
-          <button className="bg-accent text-white px-8 py-3 rounded-full font-medium flex items-center gap-2 mx-auto hover:bg-opacity-90 transition-all">
+          <button className="bg-accent hover:bg-accent/90 text-primary px-8 py-3 rounded-full font-medium flex items-center gap-2 mx-auto transition-all">
             {t.exploreCollection}
             <ChevronRight className="w-5 h-5" />
           </button>
