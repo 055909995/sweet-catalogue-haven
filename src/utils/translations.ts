@@ -1,6 +1,18 @@
-
 type TranslationType = {
   [key: string]: {
+    // Navigation
+    home: string;
+    products: string;
+    about: string;
+    contact: string;
+    admin: string;
+
+    // Admin Panel
+    adminPanel: string;
+    generalInfo: string;
+    aboutSection: string;
+
+    // Existing translations
     heroTitle: string;
     heroDescription: string;
     exploreCollection: string;
@@ -23,6 +35,19 @@ type TranslationType = {
 
 export const translations: TranslationType = {
   en: {
+    // Navigation
+    home: "Home",
+    products: "Products",
+    about: "About",
+    contact: "Contact",
+    admin: "Admin",
+
+    // Admin Panel
+    adminPanel: "Admin Panel",
+    generalInfo: "General Information",
+    aboutSection: "About Section",
+
+    // Existing translations
     heroTitle: "Crafting Sweet Moments",
     heroDescription: "Discover our artisanal collection of premium confectionery, made with passion and the finest ingredients",
     exploreCollection: "Explore Collection",
@@ -42,6 +67,19 @@ export const translations: TranslationType = {
     viewCatalog: "View Catalog"
   },
   ru: {
+    // Navigation
+    home: "Главная",
+    products: "Продукты",
+    about: "О нас",
+    contact: "Контакты",
+    admin: "Админ",
+
+    // Admin Panel
+    adminPanel: "Панель администратора",
+    generalInfo: "Общая информация",
+    aboutSection: "Раздел о нас",
+
+    // Existing translations
     heroTitle: "Создаем Сладкие Моменты",
     heroDescription: "Откройте для себя нашу коллекцию премиальных кондитерских изделий, созданных с страстью и лучшими ингредиентами",
     exploreCollection: "Изучить Коллекцию",
@@ -61,6 +99,19 @@ export const translations: TranslationType = {
     viewCatalog: "Посмотреть Каталог"
   },
   am: {
+    // Navigation
+    home: "Գլխավոր",
+    products: "Արտադրանք",
+    about: "Մեր մասին",
+    contact: "Կապ",
+    admin: "Ադմին",
+
+    // Admin Panel
+    adminPanel: "Ադմինիստրատորի վահանակ",
+    generalInfo: "Ընդհանուր տեղեկություններ",
+    aboutSection: "Մեր մասին բաժին",
+
+    // Existing translations
     heroTitle: "Ստեղծում ենք Քաղցր Պահեր",
     heroDescription: "Բացահայտեք մեր արհեստագործական հրուշակեղենի հավաքածուն՝ պատրաստված կրքով և լավագույն բաղադրիչներով",
     exploreCollection: "Դիտել Հավաքածուն",
